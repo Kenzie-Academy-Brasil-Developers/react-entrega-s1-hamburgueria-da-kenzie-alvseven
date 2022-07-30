@@ -106,6 +106,7 @@ export const CartListItemInfo = styled.div`
   }
 
   button {
+    height: 2rem;
     width: 7rem;
     font-family: "Inter";
     font-weight: 600;

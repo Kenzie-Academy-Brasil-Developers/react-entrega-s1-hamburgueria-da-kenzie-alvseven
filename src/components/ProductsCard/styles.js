@@ -103,5 +103,9 @@ export const LiContainer = styled.li`
 
   @media (min-width: 1024px) {
     width: 28%;
+
+    button {
+      height: 3rem;
+    }
   }
 `;
