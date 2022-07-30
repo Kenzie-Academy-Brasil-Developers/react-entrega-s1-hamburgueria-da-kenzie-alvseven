@@ -5,14 +5,21 @@ export const LiContainer = styled.li`
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  max-height: 20rem;
+  height: 23rem;
   margin: 0;
   padding: 0;
 
-  img {
-    min-height: 11rem;
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    background-color: #e0e0e0;
+  img {
+    height: 11rem;
+    width: 9rem;
+    background-color: #ffffff;
     -webkit-transition: -webkit-transform 0.4s ease;
     transition: transform 0.4s ease;
 
@@ -20,9 +27,14 @@ export const LiContainer = styled.li`
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
+
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
   }
 
   h3 {
+    height: 2.5rem;
     font-family: "Inter";
     font-weight: 700;
     font-size: 1rem;
@@ -50,16 +62,43 @@ export const LiContainer = styled.li`
     margin-top: 0.5rem;
     padding: 0;
     color: #ffffff;
-    background-color: #27ae60;
     border: 2px solid #27ae60;
     border-radius: 8px;
     cursor: pointer;
+    background: linear-gradient(270deg, #10ffc1, #4ef01f, #54e8c9);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   button:hover {
-    transition: 500ms;
-    color: #27ae60;
-    background-color: #ffffff;
+    transition: 400ms;
+    border: 2px solid transparent;
+    color: #212529;
   }
 
   @media (min-width: 1024px) {

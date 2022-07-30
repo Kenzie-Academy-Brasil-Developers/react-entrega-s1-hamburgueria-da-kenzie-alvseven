@@ -16,7 +16,7 @@ export const UlContainer = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 0 1.5rem 0;
-
+  background-color: snow;
   ::-webkit-scrollbar {
     width: 0.6rem;
     height: 0.6rem;
@@ -37,8 +37,8 @@ export const UlContainer = styled.ul`
 
   @media (min-width: 1024px) {
     flex-wrap: wrap;
-    gap: 2.5rem;
+    justify-content: space-evenly;
     overflow: hidden;
-    min-width: 70%;
+    min-width: 55%;
   }
 `;

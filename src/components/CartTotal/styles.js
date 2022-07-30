@@ -6,20 +6,21 @@ export const TotalPriceContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: snow;
+  border-top: 1px solid rgba(21, 0, 0, 0.4);
 
-  h2 {
-    font-family: "Inter";
-    font-weight: 500;
-    font-size: 1.49rem;
-    color: #333333;
+  h3 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #303210;
   }
 
   h4 {
-    font-family: "Inter";
-    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
     font-size: 1rem;
-    color: #333333;
+    color: #303210;
   }
 
   button {
@@ -28,16 +29,50 @@ export const TotalPriceContainer = styled.div`
     font-family: "Inter";
     font-weight: 600;
     font-size: 16px;
-    color: #828282;
-    background-color: #e0e0e0;
+    color: #f1f1f1;
+    background-color: slategray;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     cursor: pointer;
 
     :hover {
-      transition: 500ms;
-      background-color: #828282;
-      color: #e0e0e0;
+      background: linear-gradient(
+        270deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff
+      );
+      background-size: 1800% 1800%;
+
+      -webkit-animation: AnimationName 9s ease infinite;
+
+      animation: AnimationName 9s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
   }
 `;

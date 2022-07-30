@@ -28,12 +28,11 @@ export const CartTitleContainer = styled.div`
 export const CartList = styled.ul`
   display: flex;
   flex-direction: column;
-  max-height: 9rem;
+  max-height: 12rem;
   gap: 2rem;
   margin: 0.5rem 0 2rem 0;
   padding: 0;
   overflow: auto;
-
   ::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.6rem;
@@ -56,6 +55,7 @@ export const CartList = styled.ul`
 export const CartListItem = styled.li`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   gap: 0.5rem;
 `;
@@ -65,12 +65,12 @@ export const ImgContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  height: 5rem;
   img {
     width: 8rem;
     height: inherit;
     -webkit-transition: -webkit-transform 0.6s ease;
     transition: transform 0.6s ease;
+    background-color: whitesmoke;
 
     :hover {
       -webkit-transform: scale(1.2);
@@ -82,6 +82,7 @@ export const ImgContainer = styled.div`
 export const CartListItemInfo = styled.div`
   display: flex;
   flex-direction: column;
+  width: 40%;
 
   h3 {
     font-family: "Inter";
@@ -90,6 +91,8 @@ export const CartListItemInfo = styled.div`
     color: #333333;
     margin: 0.75rem 0 0 0;
     padding: 0;
+    word-wrap: break-word;
+    width: 80%;
   }
 
   p {
@@ -108,21 +111,50 @@ export const CartListItemInfo = styled.div`
   }
 
   button {
+    width: 7rem;
     font-family: "Inter";
     font-weight: 600;
     font-size: 14px;
     margin-top: 0.5rem;
+    padding: 0;
     color: #ffffff;
-    background-color: #27ae60;
     border: 2px solid #27ae60;
     border-radius: 8px;
     cursor: pointer;
+    background: linear-gradient(270deg, #10ffc1, #4ef01f, #54e8c9);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   button:hover {
     transition: 500ms;
-    color: #27ae60;
-    background-color: #ffffff;
+    border: 2px solid transparent;
+    color: #ffffff;
   }
 `;
 

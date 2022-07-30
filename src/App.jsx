@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import ProductsList from "./components/ProductsList";
 import Cart from "./components/Cart";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { MainContainer } from "./styles";
 
 function App() {
@@ -54,8 +57,15 @@ function App() {
           cartList={cartList}
           setCartList={setCartList}
           inputValue={inputValue}
+          toast={toast}
+          ToastContainer={ToastContainer}
         />
-        <Cart cartList={cartList} setCartList={setCartList} />
+        <Cart
+          cartList={cartList}
+          setCartList={setCartList}
+          toast={toast}
+          ToastContainer={ToastContainer}
+        />
       </MainContainer>
     </>
   );
