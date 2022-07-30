@@ -16,6 +16,7 @@ export default function Cart({ cartList, setCartList, toast, ToastContainer }) {
     setCartList(newCart);
     toast.success("Produto removido do carrinho!", {
       draggable: true,
+      draggablePercent: 60,
       position: toast.POSITION.TOP_CENTER,
       autoClose: 3000,
     });

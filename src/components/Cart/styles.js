@@ -71,11 +71,6 @@ export const ImgContainer = styled.div`
     -webkit-transition: -webkit-transform 0.6s ease;
     transition: transform 0.6s ease;
     background-color: whitesmoke;
-
-    :hover {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
   }
 `;
 
@@ -154,7 +149,7 @@ export const CartListItemInfo = styled.div`
   button:hover {
     transition: 500ms;
     border: 2px solid transparent;
-    color: #ffffff;
+    color: #212329;
   }
 `;
 

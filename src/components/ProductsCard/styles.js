@@ -65,7 +65,7 @@ export const LiContainer = styled.li`
     border: 2px solid #27ae60;
     border-radius: 8px;
     cursor: pointer;
-    background: linear-gradient(270deg, #10ffc1, #4ef01f, #54e8c9);
+    background: linear-gradient(270deg, #18ee10, #4ef01f, #54e8c9);
     background-size: 600% 600%;
     -webkit-animation: AnimationName 5s ease infinite;
     animation: AnimationName 5s ease infinite;

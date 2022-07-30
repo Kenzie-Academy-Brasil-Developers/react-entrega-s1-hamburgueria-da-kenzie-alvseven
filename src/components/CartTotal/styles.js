@@ -36,43 +36,9 @@ export const TotalPriceContainer = styled.div`
     cursor: pointer;
 
     :hover {
-      background: linear-gradient(
-        270deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff
-      );
-      background-size: 1800% 1800%;
-
-      -webkit-animation: AnimationName 9s ease infinite;
-
-      animation: AnimationName 9s ease infinite;
-    }
-
-    @-webkit-keyframes AnimationName {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    @keyframes AnimationName {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+      transition: 500ms;
+      color: slategrey;
+      background-color: #f1f1f1;
     }
   }
 `;

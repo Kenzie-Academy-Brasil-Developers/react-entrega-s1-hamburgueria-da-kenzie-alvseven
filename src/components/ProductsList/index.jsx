@@ -15,11 +15,15 @@ export default function ProductsList({
     if (!product) {
       setCartList((prevItens) => [...prevItens, item]);
       toast.success("Produto adicionado ao carrinho!", {
+        draggable: true,
+        draggablePercent: 40,
         position: toast.POSITION.TOP_CENTER,
         autoClose: 3000,
       });
     } else {
       toast.error("O produto já existe no carrinho!", {
+        draggable: true,
+        draggablePercent: 40,
         position: toast.POSITION.TOP_CENTER,
         autoClose: 3000,
       });

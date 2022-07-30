@@ -1,17 +1,13 @@
 import { TotalPriceContainer } from "./styles";
 
-export default function CartTotal({
-  cartList,
-  setCartList,
-  toast,
-  ToastContainer,
-}) {
+export default function CartTotal({ cartList, setCartList, toast }) {
   const totalValue = cartList.reduce((acc, cv) => acc + cv.price, 0);
 
   const clearCart = () => {
     setCartList([]);
     toast.success("Todos os produtos foram removidos do carrinho!", {
       draggable: true,
+      draggablePercent: 60,
       position: toast.POSITION.TOP_CENTER,
       autoClose: 3000,
     });

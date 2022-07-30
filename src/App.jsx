@@ -12,6 +12,7 @@ import { MainContainer } from "./styles";
 function App() {
   const [listRender, setListRender] = useState([]);
   const [list, setList] = useState([]);
+
   const [cartList, setCartList] = useState([]);
 
   useEffect(() => {
