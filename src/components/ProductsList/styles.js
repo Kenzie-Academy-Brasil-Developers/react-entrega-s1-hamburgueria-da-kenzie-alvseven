@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -40,5 +40,16 @@ export const UlContainer = styled.ul`
     justify-content: space-evenly;
     overflow: hidden;
     min-width: 55%;
+
+    ${({ searched }) =>
+      searched &&
+      css`
+        li {
+          width: 15rem;
+          img {
+            width: 15rem;
+          }
+        }
+      `}
   }
 `;

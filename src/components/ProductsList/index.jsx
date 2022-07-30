@@ -36,7 +36,7 @@ export default function ProductsList({
       {inputValue !== "" ? (
         <Container>
           <h2>Exibindo resultados para: {inputValue}</h2>
-          <UlContainer>
+          <UlContainer searched={true}>
             {listRender.map((product) => (
               <ProductCard
                 key={product.id}
